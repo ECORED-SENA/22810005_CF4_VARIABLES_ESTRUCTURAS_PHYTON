@@ -1,0 +1,462 @@
+<div class="container" id="tema_1">
+    <div class="header-ecored">
+        <h1>1. Ciclo FOR </h1>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-6"><img src="assets/images/pages/tema_1/img_1_01.svg" alt="" style="width:100%" /></div>
+            <div class="col-12">
+                <p>La estructura <strong><i>for</i></strong> se usa en aquellos casos en los cuales se tiene certeza de la cantidad de veces que se desea ejecutar un bloque de instrucciones.</p>
+                <p><strong>Ejemplo:</strong> leer 6 edades de aprendices, ingresar 100 salarios de empleados. </p>
+                <p>El bloque de instrucciones que se repite se denomina cuerpo del bucle y cada repetición se denomina una iteración.</p>
+                <p>Esta estructura de control iterativa se utiliza en situaciones en las que se desea que una variable de control tenga un valor inicial y un valor final predefinidos. No es necesario definir la variable de control antes del bucle, aunque se puede utilizar una variable ya definida previamente en el programa.</p>
+                <p>El bucle <strong><i>for</i></strong> se puede usar para recorrer los items de cualquier secuencia (cadena, lista, tupla, conjunto, diccionario) y ejecutar un bloque de código sobre ese item. En cada iteración se tiene acceso a un único elemento de la secuencia.</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo:</p>
+                    <p class="cl-green">animales = ['leon', 'tigre', 'cocodrilo']</p>
+                    <p class="cl-green">for animal in animales:</p>
+                    <p class="cl-green mb-0">print ("El animal es: {0}, tamaño de palabra es: {1}".format(animal, len(animal)) )</p>
+                </div>
+                <div class="result">
+                    <p>El animall es: leon , tamaño de palabra es: 4</p>
+                    <p>El animall es: tigre , tamaño de palabra es: 5</p>
+                    <p class="mb-0">El animall es: cocodrilo , tamaño de palabra es: 9</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>La estructura del ciclo for es la siguiente:</p>
+            </div>
+            <div class="col-12 col-md-5 my-5"><img src="assets/images/pages/tema_1/img_1_02.svg" alt="" style="width:100%" /></div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema1_1">
+                    <h2>1.1 Uso de RANGE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p class="mb-4">Según Pérez(2016) en el ciclo iterativo <strong><i>for</i></strong> se puede usar la función range, para indicar un rango de valores.</p>
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="jumbotron mb-0">
+                            <p class="mb-0"><strong><i>range(valor_inicial, valor_final)</i></strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-4">Es posible indicar solo un valor final, en caso tal, el ciclo inicia en 0.</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">for i in range(5):</p>
+                    <p class="cl-green indent_01">print(i)</p>
+                    <p class="cl-green mb-0">print('fin del ciclo')</p>
+                </div>
+                <div class="result">
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p class="mb-0">fin del ciclo</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0">Si se especifica el valor inicial y el valor final en la función range, el resultado imprimirá desde el valor inicial hasta el valor final - 1, así:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">for i in range(2, 5):</p>
+                    <p class="cl-green indent_01">print(i, i ** 3)</p>
+                    <p class="cl-green mb-0">print('fin del ciclo')</p>
+                </div>
+                <div class="result">
+                    <p>2 8</p>
+                    <p>3 27</p>
+                    <p>4 64 </p>
+                    <p class="mb-0">fin del ciclo</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0">Para imprimir hasta el valor final, éste debe incrementarse en 1.</p>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema1_2">
+                    <h2>1.2 Conceptos: valor inicial, valor final, incremento.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p class="mb-4">Cuando se deseen especificar los valores inicial, final y el incremento o decremento de la variable de control en el ciclo iterativo for, se usa la función range con tres argumentos así:</p>
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="jumbotron mb-0">
+                            <p class="mb-0"><strong><i>range(valor_inicial, valor_final, incremento/decremento)</i></strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="my-5">Cuando se omite, el incremento/decremento es implícitamente igual a 1.</p>
+                <p class="mb-0">El ciclo siempre incluye el <strong>valor_inicial</strong> y excluye el <strong>valor_final</strong> durante la iteración:</p>
+            </div>
+            <div class="col-12 mt-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">for i in range(10, 0, -2):</p>
+                    <p class="cl-green indent_01">print(i)</p>
+                    <p class="cl-green mb-0">print('fin del ciclo')</p>
+                </div>
+                <div class="result">
+                    <p>10</p>
+                    <p>8</p>
+                    <p>6</p>
+                    <p>4</p>
+                    <p>2</p>
+                    <p class="mb-0">fin del ciclo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema1_3">
+                    <h2>1.3 Usos y estructura</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p class="mb-4">La sentencia <strong>for</strong> se puede usar para imprimir secuencias, tales como cadenas, listas, tuplas, conjuntos o diccionarios.</p>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong>Uso del ciclo iterativo for en cadenas</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">for character in "hola mundo":</p>
+                    <p class="cl-green indent_01">print(character)</p>
+                    <p class="cl-green mb-0">print("fin del ciclo")</p>
+                </div>
+                <div class="result">
+                    <p>h</p>
+                    <p>o</p>
+                    <p>l</p>
+                    <p class="mb-5">a</p>
+                    <p>m</p>
+                    <p>u</p>
+                    <p>n</p>
+                    <p>d</p>
+                    <p>o</p>
+                    <p class="mb-0">fin del ciclo</p>
+                </div>
+            </div>
+            <div class="hr-divider my-5"></div>
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong>Uso de la estructura de control iterativa for en listas</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo:</p>
+                    <p class="cl-green">nombre = "Alicia"</p>
+                    <p class="cl-green">edad = 25</p>
+                    <p class="cl-green mb-5">print(f"Me llamo {nombre} y tengo {edad} años.") </p>
+                    <p class="cl-green">numeros = [0, 1, 2, 3, 4, 5]</p>
+                    <p class="cl-green">for numero in numeros:</p>
+                    <p class="cl-green indent_01">print (numero, end=" " )</p>
+                    <p class="cl-green">print("fin del ciclo")</p>
+                </div>
+                <div class="result">
+                    <p>Me llamo Alicia y tengo 25 años</p>
+                    <p class="mb-0">0 1 2 3 4 5 fin del ciclo</p>
+                </div>
+            </div>
+            <div class="hr-divider my-5"></div>
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong>Uso del bucle <i>for</i> en tuplas</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">conexion_bd = ("115.16.10.5","root","7890","clientes")</p>
+                    <p class="cl-green">print("la tupla es: ")</p>
+                    <p class="cl-green">for parametro in conexion_bd:</p>
+                    <p class="cl-green indent_01">print (parametro)</p>
+                    <p class="cl-green">print ("fin del ciclo")</p>
+                </div>
+                <div class="result">
+                    <p>la tupla es:</p>
+                    <p>115.16.10.5</p>
+                    <p>root</p>
+                    <p>7890</p>
+                    <p>clientes</p>
+                    <p class="mb-0">fin del ciclo</p>
+                </div>
+            </div>
+            <div class="hr-divider my-5"></div>
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong>Uso del ciclo iterativo <i>for</i> en conjuntos</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">A={1, 2, 3, 5, 3, 6, 4, 2}</p>
+                    <p class="cl-green">print ("Los elementos del conjunto A son:")</p>
+                    <p class="cl-green">for elemento in A:</p>
+                    <p class="cl-green indent_01">print(elemento)</p>
+                    <p class="cl-green">print ("fin del ciclo for")</p>
+                </div>
+                <div class="result">
+                    <p>Los elementos del conjunto A son:</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p class="mb-0">fin del ciclo for</p>
+                </div>
+            </div>
+            <div class="hr-divider my-5"></div>
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong>Uso del bucle <i>for</i> en diccionarios</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">ensalada = {'Manzana':'verde', 'Patilla':'rosado', 'Banano':'amarillo', 'Papaya':'naranja'}</p>
+                    <p class="cl-green">for nombre, color in ensalada.items():</p>
+                    <p class="cl-green indent_01">print (nombre, "es de color", color)</p>
+                    <p class="cl-green mb-0">print ("fin del ciclo")</p>
+                </div>
+                <div class="result">
+                    <p>Manzana es de color verde</p>
+                    <p>Patilla es de color rosado</p>
+                    <p>Banano es de color amarillo</p>
+                    <p>Papaya es de color naranja</p>
+                    <p class="mb-0">fin del ciclo </p>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <p>Otra forma de hacerlo en un diccionario es:</p>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">ensalada = {'Manzana':'verde', 'Patilla':'rosado', 'Banano':'amarillo', 'Papaya':'naranja'}</p>
+                    <p class="cl-green">for elemento in ensalada:</p>
+                    <p class="cl-green indent_01">print (elemento, 'es de color', ensalada[elemento] )</p>
+                    <p class="cl-green mb-0">print ("fin del ciclo")</p>
+                </div>
+                <div class="result">
+                    <p>Manzana es de color verde</p>
+                    <p>Patilla es de color rosado</p>
+                    <p>Banano es de color amarillo</p>
+                    <p>Papaya es de color naranja</p>
+                    <p class="mb-0">fin del ciclo </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema1_4">
+                    <h2>1.4 Sentencias BREAK, CONTINUE y PASS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p class="mb-4">Nolasco(2018) afirma que con frecuencia se requiere interrumpir un ciclo repetitivo, bien sea porque se cumple una condición y se desea salir inmediatamente de él o simplemente se requiere volver a realizar otra iteración sin ejecutar las demás instrucciones del bloque de código. Algunas veces el programador suspende la codificación de un ciclo iterativo y desea colocar un mensaje temporal. Para esto existen las sentencias <i>Break, Continue y Pass.</i></p>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong><i>BREAK</i></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>A veces los ciclos se vuelven infinitos, porque la condición siempre es verdadera. Existe una instrucción de Python, break, que permite salir de un ciclo en medio de su ejecución.</p>
+            </div>
+            <div class="col-12 mt-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">Print (“Uso de la sentencia break”)</p>
+                    <p class="cl-green">for caracter in "PYTHON SENA":</p>
+                    <p class="cl-green indent_01">if caracter == "N":</p>
+                    <p class="cl-green indent_02">break</p>
+                    <p class="cl-green indent_01">print ("El caracter actual es : " +caracter)</p>
+                    <p class="cl-green mb-0">print (“fin del ciclo”)</p>
+                </div>
+                <div class="result">
+                    <p>Uso de la sentencia break</p>
+                    <p>el caracter actual es: P</p>
+                    <p>el caracter acutal es: Y</p>
+                    <p>el caracter actual es: T</p>
+                    <p>el caracter actual es: H</p>
+                    <p>el caracter actual es: O</p>
+                    <p class="mb-0">fin del ciclo</p>
+                </div>
+            </div>
+            <div class="hr-divider my-5"></div>
+            <div class="col-12 mt-3">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong><i>CONTINUE</i></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>A veces se requiere en los ciclos iterativos que se ignoren las siguientes instrucciones y regresar al inicio del bucle, para continuar con una nueva iteración. Para solucionar esto existe la instrucción <i>continue</i>.</p>
+                <p>En el siguiente ejemplo, si la variable toma el valor de 9, salta al inicio e ejecuta otra iteración.</p>
+            </div>
+            <div class="col-12 mt-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">print("Uso de la sentencia continue")</p>
+                    <p class="cl-green">variable = 15</p>
+                    <p class="cl-green">while variable > 1:</p>
+                    <p class="cl-green indent_01">variable = variable -2</p>
+                    <p class="cl-green indent_01">if variable == 9:</p>
+                    <p class="cl-green indent_02">continue</p>
+                    <p class="cl-green indent_01">print ("Valor actual de la variable : " + str(variable))</p>
+                    <p class="cl-green mb-0">print ("fin del ciclo")</p>
+                </div>
+                <div class="result">
+                    <p>Uso de la sentencia continue</p>
+                    <p>Valor actual de la variable: 13 </p>
+                    <p>Valor actual de la variable: 11 </p>
+                    <p>Valor actual de la variable: 7 </p>
+                    <p>Valor actual de la variable: 5 </p>
+                    <p>Valor actual de la variable: 3 </p>
+                    <p>Valor actual de la variable: 1 </p>
+                    <p class="mb-0">fin del ciclo</p>
+                </div>
+            </div>
+            <div class="hr-divider my-5"></div>
+            <div class="col-12 mt-3">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong><i>PASS</i></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>La sentencia pass, tal como lo dice su nombre (pasar), es una sentencia nula, o sea que no pasa nada cuando se ejecuta. Se utiliza pass cuando se requiere por sintaxis una instrucción pero no se quiere ejecutar ningún código. También se utiliza en programación donde donde el código irá a futuro, pero no ha sido escrito todavía, utilizándolo como un relleno temporal, es decir, se encuentra “en construcción”.</p>
+            </div>
+            <div class="col-12 mt-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">print("Uso de la sentencia pass")</p>
+                    <p class="cl-green">for letra in "PYTHON SENA": </p>
+                    <p class="cl-green indent_01">if letra == "N": </p>
+                    <p class="cl-green indent_02">pass</p>
+                    <p class="cl-green indent_01">print ("El caracter actual es :" + letra)</p>
+                    <p class="cl-green mb-0">print ("fin del ciclo")</p>
+                </div>
+                <div class="result">
+                    <p>Uso de la sentencia pass</p>
+                    <p>El caracter actual es: P </p>
+                    <p>El caracter actual es: Y </p>
+                    <p>El caracter actual es: T </p>
+                    <p>El caracter actual es: H </p>
+                    <p>El caracter actual es: O </p>
+                    <p>El caracter actual es: N </p>
+                    <p>El caracter actual es: </p>
+                    <p>El caracter actual es: S </p>
+                    <p>El caracter actual es: E </p>
+                    <p>El caracter actual es: N </p>
+                    <p>El caracter actual es: A </p>
+                    <p class="mb-0">fin del ciclo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema1_5">
+                    <h2>1.5 Estructura <i>FOR - ELSE</i></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>De forma similar a la sentencia <strong><i>if</i></strong>, la estructura <strong><i>for</i></strong> también se puede combinar con una sentencia <strong><i>else</i></strong>.</p>
+                <p class="mb-4">El bloque <strong><i>else</i></strong> se ejecutará cuando la expresión condicional del bucle for sea <strong><i>False</i></strong>.</p>
+                <p>El siguiente ejemplo presenta una conexión a una base de datos de empleados: </p>
+            </div>
+            <div class="col-12 mt-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">db_connection = "115.0.0.5","7890","root","empleados"</p>
+                    <p class="cl-green">for parametro in db_connection:</p>
+                    <p class="cl-green indent_01">print parametro</p>
+                    <p class="cl-green print">else:</p>
+                    <p class="cl-green print indent_01">print """El comando PostgreSQL es: </p>
+                    <p class="cl-green print">$ psql -h {server} -p {port} -U {user} -d {db_name}""".format( </p>
+                    <p class="cl-green print indent_01">server=db_connection[0], port=db_connection[1], </p>
+                    <p class="cl-green print indent_01">user=db_connection[2], db_name=db_connection[3])</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

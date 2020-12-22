@@ -1,0 +1,364 @@
+.container#tema_2
+
+    .header-ecored
+        h1 2. Ciclo WHILE   
+
+    .jumbotron.bg-white 
+      .row.justify-content-center             
+
+        .col-12.d-flex.justify-content-center
+          img(src="assets/images/pages/tema_2/img_2_02.svg", alt="")
+
+        .col-12
+          p.mb-0 Según Fernández(2016), un ciclo de control iterativo #[strong #[i WHILE]] permite repetir la ejecución de un bloque de instrucciones mientras se cumpla una condición, es decir, mientras la condición tenga el valor #[strong #[i True.]]  
+              
+
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema2_1
+            h2 2.1 Estructura WHILE
+      
+      .row.justify-content-center
+        .col-12
+          p La estructura de la sentencia de control while es la siguiente:
+
+        .col-12.my-5
+          .console
+            p.cl-green while condicion:
+            p.cl-green.indent_01.mb-0 cuerpo del bucle
+
+        .col-12
+          p Las variables que se encuentran en la condición se denominan variables de control. Las variables de control se deben definir antes del #[strong #[i while]] y modificarse dentro del #[strong #[i while]].
+
+          p Si el resultado es True se ejecuta el bloque de instrucciones del bucle. Una vez ejecutado el bucle, se repite el proceso una y otra vez mientras la condición sea verdadera.
+
+          p Si el resultado es #[strong #[i False]], no se ejecuta el bloque de instrucciones del bucle y continúa la ejecución en la siguiente instrucción después del bucle en el programa.
+
+          p.mb-0 Una forma de incrementar la variable de control es usando el símbolo +=
+
+        .col-12.my-5
+          .console
+            p.cl-gray Ejemplo
+            p.cl-green i = 1
+            p.cl-green while i <= 11:
+            p.cl-green.indent_01 print(i)
+            p.cl-green.indent_01 i += 2
+            p.cl-green.mb-0 print("Programa Finalizado")
+
+        .col-12
+          p.mb-0 Donde i += 2   significa que el valor de i  se incrementa en 2 cada vez que se ejecuta el ciclo repetitivo.
+
+        .col-12.mb-5
+          .result  
+            p 1
+            p 3
+            p 5
+            p 7
+            p 9
+            p 11
+            p.mb-0 Programa finalizado
+
+        .col-12
+          p.mb-0  Una ventaja adicional del bucle while es que el número de iteraciones lo puede definir el usuario durante el bucle. Por ejemplo, el programa solicita un número al usuario una y otra vez hasta que el usuario  acierte.
+
+        .col-12.my-5
+          .console
+            p.cl-gray Ejemplo
+            p.cl-green i = 1
+            p.cl-green numero1=100
+            p.cl-green numero2 = int(input("Digite un número de 1 a 100: "))
+            p.cl-green while numero2 != numero1:
+            p.cl-green.indent_01 i += 1
+            p.cl-green.indent_01 numero2 = int(input("Digite un número de 1 a 100: "))
+            p.cl-green print ("Acertaste en el intento No.", i)
+          .result
+            p Digite un número de 1 a 100: 5
+            p Digite un número de 1 a 100: 8
+            p Digite un número de 1 a 100: 10
+            p Digite un número de 1 a 100: 100
+            p.mb-0 Acertaste en el intento No: 4
+           
+
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema2_2
+            h2 2.2 Tipos de bucle WHILE
+      
+      .row.justify-content-center
+        .col-12
+          p La sentencia #[strong #[i while]] permite ejecutar ciclos, es decir, ejecutar un bloque de código múltiples veces.
+
+          p.mb-5 El ciclo #[strong #[i while]]  realiza múltiples iteraciones con base en el resultado de una expresión lógica: #[i True o False].
+
+          p Para Zed(2014), existen 3 tipos de ciclos repetitivos con la sentencia while:
+
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p #[strong #[i While]] controlado por contador.
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p #[strong #[i While]]  controlado por evento.
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_single_chevron.svg", alt="")
+            .list__txt
+              p.mb-0 #[strong #[i While]]  con Else.
+
+        .col-12.mt-5
+          p.mb-0 A continuación se detalla el uso de cada uno de ellos, dependiendo de la situación que deba resolver el programador.
+
+      .hr-divider.my-5
+
+      .row
+        .col-12
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_duoble_chevron.svg", alt="")
+            .list__txt
+              h3 Ciclo #[i while] controlado por contador
+              p.mb-0 Es un ciclo donde existe una variable o contador  con un valor inicial, el cual se incrementa / decrementa en cada iteración hasta que llega a un valor final definido en la condición incluida en la sentencia #[strong #[i While]].
+              
+              .console.my-5
+                p.cl-green print ("Uso del ciclo while con contador")
+                p.cl-green total, valor = 0, 1
+                p.cl-green while valor <= 12:
+                p.cl-green.indent_01 print (valor)
+                p.cl-green.indent_01 total = total + valor
+                p.cl-green.indent_01 print ("el total parcial es ",total)
+                p.cl-green.indent_01 valor = valor + 1                  
+                p.cl-green print ("El total final es ",total)
+                p.cl-green print( "fin del ciclo while")
+
+              p El resultado de este ciclo while controlado por contador es:
+
+              .result
+                p Uso del ciclo while con contador
+                p 1
+                p el total parcial es 1
+                p 2
+                p el total parcial es 3
+                p 3
+                p el total parcial es 6
+                p 4
+                p el total parcial es 10
+                p 5
+                p el total parcial es 15
+                p 6
+                p el total parcial es 21
+                p 7
+                p el total parcial es 28
+                p 8
+                p el total parcial es 36
+                p 9
+                p el total parcial es 45
+                p 10
+                p el total parcial es 55
+                p 11
+                p el total parcial es 66
+                p 12
+                p el total parcial es 78
+                p El total final es 78
+                p.mb-0 Fin del ciclo while
+               
+
+      .hr-divider.my-5
+
+      .row
+        .col-12
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_duoble_chevron.svg", alt="")
+            .list__txt
+              h3 Ciclo #[i while] controlado por evento
+              p.mb-0 Es un ciclo repetitivo #[strong #[i while]] donde se activa un evento dentro del ciclo, el cual causa que el bucle se interrumpa. 
+
+              .console.my-5
+                p.cl-green print ("Uso del ciclo while controlado por evento")
+                p.cl-green promedio, total, contador = 0, 0, 0
+                p.cl-green print ("=== Software para parqueadero ===")
+                p.cl-green placa = input("Introduzca la placa del vehiculo (99 para salir): " )
+                p.cl-green while placa != "99":
+                p.cl-green.indent_01 valor= float(input("Digite valor del parqueadero: "))
+                p.cl-green.indent_01 total = total + valor
+                p.cl-green.indent_01 contador= contador+1
+                p.cl-green.indent_01 placa = input("Introduzca la placa del vehiculo (99 para salir): " )
+                p.cl-green promedio = round(total / contador)
+                p.cl-green print ("Promedio de vr. parqueadero por vehiculo: " + str(promedio))
+                p.cl-green print ("Total dinero recaudado: ", round(total))
+                p.cl-green.mb-0 print( "fin del ciclo while")
+
+              p.mb-0 El resultado de este ciclo while controlado por evento es:
+
+              .result
+                p Uso del ciclo while controlado por evento
+                p #{"==="} software para parqueadero #{"==="}
+                p Introduzca la placa del vehiculo (99 para salir): XER45T
+                p Digite valor del parqueadero: 2500
+                p p Introduzca la placa del vehiculo (99 para salir): JEF56R
+                p Digite valor del parqueadero: 1500
+                p Introduzca la placa del vehiculo (99 para salir): 99
+                p Promedio de vr. parqueadero por vehiculo: 2000
+                p Total dinero recuadado: 4000
+                p.mb-0 fin del ciclo while
+
+      .hr-divider.my-5
+
+      .row
+        .col-12
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_duoble_chevron.svg", alt="")
+            .list__txt
+              h3 Ciclo #[i while] controlado por evento
+              p De manera similar a la sentencia #[strong #[i if]], el ciclo de control iterativo #[strong #[i while]] se puede combinar con la sentencia #[strong #[i else]].
+
+              p.mb-0 Pérez(2016), explica que la sentencia else ocurre cuando la expresión condicional del #[strong #[i while]] es #[strong #[i False]]. 
+
+              .console.my-5
+                p.cl-green print ("Uso del ciclo while + else")
+                p.cl-green promedio, total, contador = 0, 0, 0
+                p.cl-green print ("=== Software para parqueadero ===")
+                p.cl-green placa = input("Introduzca la placa del vehiculo (99 para salir): " )
+                p.cl-green while placa != "99":
+                p.cl-green.indent_01 valor= float(input("Digite valor del parqueadero: "))
+                p.cl-green.indent_01 total = total + valor
+                p.cl-green.indent_01 contador= contador+1
+                p.cl-green.indent_01 placa = input("Introduzca la placa del vehiculo (99 para salir): " )
+                p.cl-green else:    
+                p.cl-green.indent_01 promedio = round(total / contador)
+                p.cl-green.indent_01 print ("Promedio de vr. parqueadero por vehiculo: " + str(promedio))
+                p.cl-green.indent_01 print ("Total dinero recaudado: ", round(total))
+                p.cl-green.indent_01 print( "fin del ciclo while")
+                p.cl-green.mb-0 print("final del ciclo while + else")
+
+              p.mb-0 El resultado de este ciclo #[strong #[i while]] con #[strong #[i else]] es:
+
+              .result
+                p Uso del ciclo while + else
+                p #{"==="} software para parqueadero #{"==="}
+                p Introduzca la placa del vehiculo (99 para salir): XER45T
+                p Digite valor del parqueadero: 2500
+                p p Introduzca la placa del vehiculo (99 para salir): JEF56R
+                p Digite valor del parqueadero: 1500
+                p Introduzca la placa del vehiculo (99 para salir): 99
+                p Promedio de vr. parqueadero por vehiculo: 2000
+                p Total dinero recuadado: 4000
+                p fin del ciclo while
+                p.mb-0 final del ciclo while + else
+
+    .jumbotron.bg-white     
+      .row
+        .col-12
+          .header-ecored.mt-3#tema2_3
+            h2 2.3 Sentencias BREAK, CONTINUE y PASS
+      
+      .row.justify-content-center
+        .col-12
+          p Similar al ciclo iterativo #[strong #[i for]], en el bucle con #[strong #[i while]] existen existen las sentencias #[strong #[i Break]],  #[strong #[i Continue]] y #[strong #[i Pass]].
+
+      .hr-divider.my-5
+
+      .row
+        .col-12
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_duoble_chevron.svg", alt="")
+            .list__txt
+              h3 #[i BREAK] 
+              p.mb-0 #[strong #[i Break]] termina el bucle actual y continúa con la ejecución de la siguiente instrucción después del ciclo.
+
+              .console.my-5
+                p.cl-green print("Uso de la sentencia BREAK en while")
+                p.cl-green variable = 35
+                p.cl-green while variable > 1:
+                p.cl-green.indent_01 variable = variable -5
+                p.cl-green.indent_01 if variable == 10:
+                p.cl-green.indent_02 break
+                p.cl-green.indent_01 print ("Valor actual del caracter : " + str(variable))
+                p.cl-green print ("fin del ciclo")
+
+              .result
+                p Uso de la sentencia BREAK en while
+                p Valor actual del caracter : 30
+                p Valor actual del caracter : 25
+                p Valor actual del caracter : 20
+                p Valor actual del caracter : 15
+                p.mb-0 fin del ciclo
+
+      .hr-divider.my-5
+
+      .row
+        .col-12
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_duoble_chevron.svg", alt="")
+            .list__txt
+              h3 #[i CONTINUE] 
+              p.mb-0 La sentencia #[strong #[i Continue]] en Python, regresa el control de la ejecución del programa al inicio del bucle, desechando todas las instrucciones que quedan en la iteración actual del bucle e inicia una nueva  iteración.
+
+              .console.my-5
+                p.cl-green print("Uso de la sentencia CONTINUE en while")
+                p.cl-green variable = 35
+                p.cl-green while variable > 1:
+                p.cl-green.indent_01 variable = variable -5
+                p.cl-green.indent_01 if variable == 15:
+                p.cl-green.indent_02 continue
+                p.cl-green.indent_01 print ("Valor actual de la variable : " + str(variable))
+                p.cl-green print ("fin del ciclo")
+
+              .result
+                p Uso de la sentencia CONTINUE en while
+                p Valor actual del caracter : 30
+                p Valor actual del caracter : 25
+                p Valor actual del caracter : 20
+                p Valor actual del caracter : 10
+                p Valor actual del caracter : 5
+                p Valor actual del caracter : 0
+                p.mb-0 fin del ciclo
+
+      .hr-divider.my-5
+
+      .row
+        .col-12
+          .list
+            .list__item
+              .list__item__icon
+                img(src="assets/images/icons/icon_duoble_chevron.svg", alt="")
+            .list__txt
+              h3 #[i PASS] 
+              p.mb-0 La sentencia #[strong #[i Pass]] se utiliza cuando se requiere por sintaxis una instrucción pero no se requiere ejecutar ningún comando o código.
+
+              .console.my-5
+                p.cl-green print("Uso de la sentencia PASS en while")
+                p.cl-green variable = 35
+                p.cl-green while variable > 1:
+                p.cl-green.indent_01 variable = variable -5
+                p.cl-green.indent_01 if variable == 25:
+                p.cl-green.indent_02 pass
+                p.cl-green.indent_01 print ("Valor actual de la variable : " + str(variable))
+                p.cl-green print ("fin del ciclo")
+
+              .result
+                p Uso de la sentencia PASS en while
+                p Valor actual del caracter : 30
+                p Valor actual del caracter : 25
+                p Valor actual del caracter : 20
+                p Valor actual del caracter : 15
+                p Valor actual del caracter : 10
+                p Valor actual del caracter : 5
+                p Valor actual del caracter : 0
+                p.mb-0 fin del ciclo

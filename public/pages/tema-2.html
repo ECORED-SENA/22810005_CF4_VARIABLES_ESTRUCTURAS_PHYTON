@@ -1,0 +1,386 @@
+<div class="container" id="tema_2">
+    <div class="header-ecored">
+        <h1>2. Ciclo WHILE </h1>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row justify-content-center">
+            <div class="col-12 d-flex justify-content-center"><img src="assets/images/pages/tema_2/img_2_02.svg" alt="" /></div>
+            <div class="col-12">
+                <p class="mb-0">Según Fernández(2016), un ciclo de control iterativo <strong><i>WHILE</i></strong> permite repetir la ejecución de un bloque de instrucciones mientras se cumpla una condición, es decir, mientras la condición tenga el valor <strong><i>True.</i></strong> </p>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema2_1">
+                    <h2>2.1 Estructura WHILE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>La estructura de la sentencia de control while es la siguiente:</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-green">while condicion:</p>
+                    <p class="cl-green indent_01 mb-0">cuerpo del bucle</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>Las variables que se encuentran en la condición se denominan variables de control. Las variables de control se deben definir antes del <strong><i>while</i></strong> y modificarse dentro del <strong><i>while</i></strong>.</p>
+                <p>Si el resultado es True se ejecuta el bloque de instrucciones del bucle. Una vez ejecutado el bucle, se repite el proceso una y otra vez mientras la condición sea verdadera.</p>
+                <p>Si el resultado es <strong><i>False</i></strong>, no se ejecuta el bloque de instrucciones del bucle y continúa la ejecución en la siguiente instrucción después del bucle en el programa.</p>
+                <p class="mb-0">Una forma de incrementar la variable de control es usando el símbolo +=</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">i = 1</p>
+                    <p class="cl-green">while i <= 11:</p>
+                            <p class="cl-green indent_01">print(i)</p>
+                            <p class="cl-green indent_01">i += 2</p>
+                            <p class="cl-green mb-0">print("Programa Finalizado")</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0">Donde i += 2 significa que el valor de i se incrementa en 2 cada vez que se ejecuta el ciclo repetitivo.</p>
+            </div>
+            <div class="col-12 mb-5">
+                <div class="result">
+                    <p>1</p>
+                    <p>3</p>
+                    <p>5</p>
+                    <p>7</p>
+                    <p>9</p>
+                    <p>11</p>
+                    <p class="mb-0">Programa finalizado</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="mb-0"> Una ventaja adicional del bucle while es que el número de iteraciones lo puede definir el usuario durante el bucle. Por ejemplo, el programa solicita un número al usuario una y otra vez hasta que el usuario acierte.</p>
+            </div>
+            <div class="col-12 my-5">
+                <div class="console">
+                    <p class="cl-gray">Ejemplo</p>
+                    <p class="cl-green">i = 1</p>
+                    <p class="cl-green">numero1=100</p>
+                    <p class="cl-green">numero2 = int(input("Digite un número de 1 a 100: "))</p>
+                    <p class="cl-green">while numero2 != numero1:</p>
+                    <p class="cl-green indent_01">i += 1</p>
+                    <p class="cl-green indent_01">numero2 = int(input("Digite un número de 1 a 100: "))</p>
+                    <p class="cl-green">print ("Acertaste en el intento No.", i)</p>
+                </div>
+                <div class="result">
+                    <p>Digite un número de 1 a 100: 5</p>
+                    <p>Digite un número de 1 a 100: 8</p>
+                    <p>Digite un número de 1 a 100: 10</p>
+                    <p>Digite un número de 1 a 100: 100</p>
+                    <p class="mb-0">Acertaste en el intento No: 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema2_2">
+                    <h2>2.2 Tipos de bucle WHILE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>La sentencia <strong><i>while</i></strong> permite ejecutar ciclos, es decir, ejecutar un bloque de código múltiples veces.</p>
+                <p class="mb-5">El ciclo <strong><i>while</i></strong> realiza múltiples iteraciones con base en el resultado de una expresión lógica: <i>True o False</i>.</p>
+                <p>Para Zed(2014), existen 3 tipos de ciclos repetitivos con la sentencia while:</p>
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_single_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong><i>While</i></strong> controlado por contador.</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_single_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p><strong><i>While</i></strong> controlado por evento.</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_single_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <p class="mb-0"><strong><i>While</i></strong> con Else.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <p class="mb-0">A continuación se detalla el uso de cada uno de ellos, dependiendo de la situación que deba resolver el programador.</p>
+            </div>
+        </div>
+        <div class="hr-divider my-5"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <h3>Ciclo <i>while</i> controlado por contador</h3>
+                        <p class="mb-0">Es un ciclo donde existe una variable o contador con un valor inicial, el cual se incrementa / decrementa en cada iteración hasta que llega a un valor final definido en la condición incluida en la sentencia <strong><i>While</i></strong>.</p>
+                        <div class="console my-5">
+                            <p class="cl-green">print ("Uso del ciclo while con contador")</p>
+                            <p class="cl-green">total, valor = 0, 1</p>
+                            <p class="cl-green">while valor <= 12:</p>
+                                    <p class="cl-green indent_01">print (valor)</p>
+                                    <p class="cl-green indent_01">total = total + valor</p>
+                                    <p class="cl-green indent_01">print ("el total parcial es ",total)</p>
+                                    <p class="cl-green indent_01">valor = valor + 1 </p>
+                                    <p class="cl-green">print ("El total final es ",total)</p>
+                                    <p class="cl-green">print( "fin del ciclo while")</p>
+                        </div>
+                        <p>El resultado de este ciclo while controlado por contador es:</p>
+                        <div class="result">
+                            <p>Uso del ciclo while con contador</p>
+                            <p>1</p>
+                            <p>el total parcial es 1</p>
+                            <p>2</p>
+                            <p>el total parcial es 3</p>
+                            <p>3</p>
+                            <p>el total parcial es 6</p>
+                            <p>4</p>
+                            <p>el total parcial es 10</p>
+                            <p>5</p>
+                            <p>el total parcial es 15</p>
+                            <p>6</p>
+                            <p>el total parcial es 21</p>
+                            <p>7</p>
+                            <p>el total parcial es 28</p>
+                            <p>8</p>
+                            <p>el total parcial es 36</p>
+                            <p>9</p>
+                            <p>el total parcial es 45</p>
+                            <p>10</p>
+                            <p>el total parcial es 55</p>
+                            <p>11</p>
+                            <p>el total parcial es 66</p>
+                            <p>12</p>
+                            <p>el total parcial es 78</p>
+                            <p>El total final es 78</p>
+                            <p class="mb-0">Fin del ciclo while</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-divider my-5"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <h3>Ciclo <i>while</i> controlado por evento</h3>
+                        <p class="mb-0">Es un ciclo repetitivo <strong><i>while</i></strong> donde se activa un evento dentro del ciclo, el cual causa que el bucle se interrumpa. </p>
+                        <div class="console my-5">
+                            <p class="cl-green">print ("Uso del ciclo while controlado por evento")</p>
+                            <p class="cl-green">promedio, total, contador = 0, 0, 0</p>
+                            <p class="cl-green">print ("=== Software para parqueadero ===")</p>
+                            <p class="cl-green">placa = input("Introduzca la placa del vehiculo (99 para salir): " )</p>
+                            <p class="cl-green">while placa != "99":</p>
+                            <p class="cl-green indent_01">valor= float(input("Digite valor del parqueadero: "))</p>
+                            <p class="cl-green indent_01">total = total + valor</p>
+                            <p class="cl-green indent_01">contador= contador+1</p>
+                            <p class="cl-green indent_01">placa = input("Introduzca la placa del vehiculo (99 para salir): " )</p>
+                            <p class="cl-green">promedio = round(total / contador)</p>
+                            <p class="cl-green">print ("Promedio de vr. parqueadero por vehiculo: " + str(promedio))</p>
+                            <p class="cl-green">print ("Total dinero recaudado: ", round(total))</p>
+                            <p class="cl-green mb-0">print( "fin del ciclo while")</p>
+                        </div>
+                        <p class="mb-0">El resultado de este ciclo while controlado por evento es:</p>
+                        <div class="result">
+                            <p>Uso del ciclo while controlado por evento</p>
+                            <p>=== software para parqueadero ===</p>
+                            <p>Introduzca la placa del vehiculo (99 para salir): XER45T</p>
+                            <p>Digite valor del parqueadero: 2500</p>
+                            <p>p Introduzca la placa del vehiculo (99 para salir): JEF56R</p>
+                            <p>Digite valor del parqueadero: 1500</p>
+                            <p>Introduzca la placa del vehiculo (99 para salir): 99</p>
+                            <p>Promedio de vr. parqueadero por vehiculo: 2000</p>
+                            <p>Total dinero recuadado: 4000</p>
+                            <p class="mb-0">fin del ciclo while</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-divider my-5"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <h3>Ciclo <i>while</i> controlado por evento</h3>
+                        <p>De manera similar a la sentencia <strong><i>if</i></strong>, el ciclo de control iterativo <strong><i>while</i></strong> se puede combinar con la sentencia <strong><i>else</i></strong>.</p>
+                        <p class="mb-0">Pérez(2016), explica que la sentencia else ocurre cuando la expresión condicional del <strong><i>while</i></strong> es <strong><i>False</i></strong>. </p>
+                        <div class="console my-5">
+                            <p class="cl-green">print ("Uso del ciclo while + else")</p>
+                            <p class="cl-green">promedio, total, contador = 0, 0, 0</p>
+                            <p class="cl-green">print ("=== Software para parqueadero ===")</p>
+                            <p class="cl-green">placa = input("Introduzca la placa del vehiculo (99 para salir): " )</p>
+                            <p class="cl-green">while placa != "99":</p>
+                            <p class="cl-green indent_01">valor= float(input("Digite valor del parqueadero: "))</p>
+                            <p class="cl-green indent_01">total = total + valor</p>
+                            <p class="cl-green indent_01">contador= contador+1</p>
+                            <p class="cl-green indent_01">placa = input("Introduzca la placa del vehiculo (99 para salir): " )</p>
+                            <p class="cl-green">else: </p>
+                            <p class="cl-green indent_01">promedio = round(total / contador)</p>
+                            <p class="cl-green indent_01">print ("Promedio de vr. parqueadero por vehiculo: " + str(promedio))</p>
+                            <p class="cl-green indent_01">print ("Total dinero recaudado: ", round(total))</p>
+                            <p class="cl-green indent_01">print( "fin del ciclo while")</p>
+                            <p class="cl-green mb-0">print("final del ciclo while + else")</p>
+                        </div>
+                        <p class="mb-0">El resultado de este ciclo <strong><i>while</i></strong> con <strong><i>else</i></strong> es:</p>
+                        <div class="result">
+                            <p>Uso del ciclo while + else</p>
+                            <p>=== software para parqueadero ===</p>
+                            <p>Introduzca la placa del vehiculo (99 para salir): XER45T</p>
+                            <p>Digite valor del parqueadero: 2500</p>
+                            <p>p Introduzca la placa del vehiculo (99 para salir): JEF56R</p>
+                            <p>Digite valor del parqueadero: 1500</p>
+                            <p>Introduzca la placa del vehiculo (99 para salir): 99</p>
+                            <p>Promedio de vr. parqueadero por vehiculo: 2000</p>
+                            <p>Total dinero recuadado: 4000</p>
+                            <p>fin del ciclo while</p>
+                            <p class="mb-0">final del ciclo while + else</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-ecored mt-3" id="tema2_3">
+                    <h2>2.3 Sentencias BREAK, CONTINUE y PASS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p>Similar al ciclo iterativo <strong><i>for</i></strong>, en el bucle con <strong><i>while</i></strong> existen existen las sentencias <strong><i>Break</i></strong>, <strong><i>Continue</i></strong> y <strong><i>Pass</i></strong>.</p>
+            </div>
+        </div>
+        <div class="hr-divider my-5"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <h3><i>BREAK</i> </h3>
+                        <p class="mb-0"><strong><i>Break</i></strong> termina el bucle actual y continúa con la ejecución de la siguiente instrucción después del ciclo.</p>
+                        <div class="console my-5">
+                            <p class="cl-green">print("Uso de la sentencia BREAK en while")</p>
+                            <p class="cl-green">variable = 35</p>
+                            <p class="cl-green">while variable > 1:</p>
+                            <p class="cl-green indent_01">variable = variable -5</p>
+                            <p class="cl-green indent_01">if variable == 10:</p>
+                            <p class="cl-green indent_02">break</p>
+                            <p class="cl-green indent_01">print ("Valor actual del caracter : " + str(variable))</p>
+                            <p class="cl-green">print ("fin del ciclo")</p>
+                        </div>
+                        <div class="result">
+                            <p>Uso de la sentencia BREAK en while</p>
+                            <p>Valor actual del caracter : 30</p>
+                            <p>Valor actual del caracter : 25</p>
+                            <p>Valor actual del caracter : 20</p>
+                            <p>Valor actual del caracter : 15</p>
+                            <p class="mb-0">fin del ciclo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-divider my-5"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <h3><i>CONTINUE</i> </h3>
+                        <p class="mb-0">La sentencia <strong><i>Continue</i></strong> en Python, regresa el control de la ejecución del programa al inicio del bucle, desechando todas las instrucciones que quedan en la iteración actual del bucle e inicia una nueva iteración.</p>
+                        <div class="console my-5">
+                            <p class="cl-green">print("Uso de la sentencia CONTINUE en while")</p>
+                            <p class="cl-green">variable = 35</p>
+                            <p class="cl-green">while variable > 1:</p>
+                            <p class="cl-green indent_01">variable = variable -5</p>
+                            <p class="cl-green indent_01">if variable == 15:</p>
+                            <p class="cl-green indent_02">continue</p>
+                            <p class="cl-green indent_01">print ("Valor actual de la variable : " + str(variable))</p>
+                            <p class="cl-green">print ("fin del ciclo")</p>
+                        </div>
+                        <div class="result">
+                            <p>Uso de la sentencia CONTINUE en while</p>
+                            <p>Valor actual del caracter : 30</p>
+                            <p>Valor actual del caracter : 25</p>
+                            <p>Valor actual del caracter : 20</p>
+                            <p>Valor actual del caracter : 10</p>
+                            <p>Valor actual del caracter : 5</p>
+                            <p>Valor actual del caracter : 0</p>
+                            <p class="mb-0">fin del ciclo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-divider my-5"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="list">
+                    <div class="list__item">
+                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt="" /></div>
+                    </div>
+                    <div class="list__txt">
+                        <h3><i>PASS</i> </h3>
+                        <p class="mb-0">La sentencia <strong><i>Pass</i></strong> se utiliza cuando se requiere por sintaxis una instrucción pero no se requiere ejecutar ningún comando o código.</p>
+                        <div class="console my-5">
+                            <p class="cl-green">print("Uso de la sentencia PASS en while")</p>
+                            <p class="cl-green">variable = 35</p>
+                            <p class="cl-green">while variable > 1:</p>
+                            <p class="cl-green indent_01">variable = variable -5</p>
+                            <p class="cl-green indent_01">if variable == 25:</p>
+                            <p class="cl-green indent_02">pass</p>
+                            <p class="cl-green indent_01">print ("Valor actual de la variable : " + str(variable))</p>
+                            <p class="cl-green">print ("fin del ciclo")</p>
+                        </div>
+                        <div class="result">
+                            <p>Uso de la sentencia PASS en while</p>
+                            <p>Valor actual del caracter : 30</p>
+                            <p>Valor actual del caracter : 25</p>
+                            <p>Valor actual del caracter : 20</p>
+                            <p>Valor actual del caracter : 15</p>
+                            <p>Valor actual del caracter : 10</p>
+                            <p>Valor actual del caracter : 5</p>
+                            <p>Valor actual del caracter : 0</p>
+                            <p class="mb-0">fin del ciclo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
